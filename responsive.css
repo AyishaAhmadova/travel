@@ -1,0 +1,41 @@
+@media screen and (max-width: 768px) {
+    .responsive__btn {
+        display: block;
+    }
+
+    .kart #sag,
+    .kart #sol {
+        display: none;
+    }
+
+    .masin img {
+        width: 100px;
+        height: auto;
+        position: absolute;
+        left: 80px;
+        top: 150px;
+        
+    }
+
+  .text h1 {
+      font-size: 32px;
+  }
+    :root {
+        --product-row-count: 2;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    :root {
+            --product-row-count: 1;
+        }
+    
+        .kart #sag,
+        .kart #sol {
+            display: none;
+        }
+    
+        .text h1 {
+            font-size: 32px;
+        }
+}

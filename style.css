@@ -1,0 +1,230 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+.background {
+    background-image: url(bacground.webp);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.masin {
+    position: absolute;
+    animation-name: car;
+    animation-duration: 20s;
+    animation: car 10s linear infinite;
+
+}
+
+.masin img {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+}
+
+@keyframes car {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    50% {
+        top: 0;
+        left: 150px;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+
+}
+
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.kart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.text h2 {
+    color: rgb(14, 34, 95);
+    text-align: center;
+    padding: 30px;
+}
+
+.text h1 {
+    color: rgb(187, 91, 139);
+    text-align: center;
+    font-size: 45px;
+    padding: 25px;
+}
+
+:root {
+    --product-gap: 200px;
+    --product-row-count: 3;
+}
+
+.visit {
+    width: calc(100% / var(--product-row-count) - (var(--product-gap) - (var(--product-gap) / var(--product-row-count))));
+    border: 2px inset rgb(3, 3, 3);
+    box-shadow: 1px 1px 5px rgb(25, 26, 25);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+
+}
+
+.visit img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.visit:hover img {
+    transform: scale(1.7);
+}
+
+.kart .visit .haqqinda {
+    display: flex;
+    justify-content: space-between;
+}
+
+.haqqinda h2 {
+    color: rgb(44, 85, 188);
+    padding: 10px;
+}
+
+.qiymet {
+    color: rgb(40, 12, 142);
+    padding: 13px;
+}
+
+#guns {
+    color: rgb(138, 120, 212);
+    padding: 10px;
+}
+
+#gun {
+    color: rgb(18, 18, 123);
+}
+
+.kart #sag {
+    font-size: 30px;
+    color: rgb(187, 91, 139);
+    cursor: pointer;
+    padding: 35px;
+}
+
+.kart #sol {
+    font-size: 30px;
+    color: rgb(187, 91, 139);
+    cursor: pointer;
+    padding: 35px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 15%;
+    justify-content: space-between;
+
+
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+
+    justify-content: space-between;
+    padding: 0 5px;
+    position: relative;
+
+
+}
+
+.navbar ul li a {
+    color: rgb(62, 38, 158);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+ul li i {
+    font-size: 25px;
+}
+
+ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    width: 0%;
+    bottom: -5px;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.5s ease-out;
+    filter: drop-shadow(5px 5px 5px blue);
+
+
+
+}
+
+ul li:hover::after {
+    width: 100%;
+}
+
+.logo img {
+    width: 150px;
+    cursor: pointer;
+    transition: 2s;
+    margin-left: 0px;
+    filter: drop-shadow(5px 5px 5px rgb(5, 5, 12));
+}
+
+.logo :hover {
+    transform: rotateY(360deg);
+    transition: 2s;
+}
+
+.btn {
+    padding: 12px 20px;
+    background-color: rgb(27, 27, 178);
+    margin-top: 50px;
+    font-size: 12px;
+    border: 0;
+    justify-content: center;
+}
+.bacground h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
